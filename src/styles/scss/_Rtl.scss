@@ -1,0 +1,58 @@
+body.rtl {
+  // direction: rtl;
+  .wrapper.hero .hero {
+    direction: rtl;
+
+    .left {
+      margin-right: 0 !important;
+      // margin: 0;
+      margin-left: 12%;
+    }
+
+    .img {
+      left: 0;
+      right: 0;
+      font-size: .8em;
+    }
+  }
+
+  .floating-char-anim {
+    direction: rtl;
+  }
+
+  .card {
+    .title {
+      direction: rtl;
+    }
+
+    .disc {
+      direction: rtl;
+    }
+
+    .--accent-btn {
+      direction: rtl;
+    }
+  }
+
+  // .card {
+  //   display: none;
+  // }
+
+  // .floating-char-anim  {
+  //   display: none;
+  // }
+
+  // .left {
+  //   display: none;
+  // }
+
+  // .img {
+  //   display: none;
+  // }
+
+  // .wrapper.head {
+  //   display: none;
+  // }
+
+
+}

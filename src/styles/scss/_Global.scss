@@ -1,0 +1,144 @@
+$xs: 410px;
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+
+:root {
+  --bg-clr1: black;
+  --bg-clr2: white;
+  --bg-clr3: gray;
+  --bg-clr4: #faebd7;
+
+  --card-bg: #ededed;
+
+  --accent-clr: #ff4500;
+  --accent-clr-fade: #ff450055;
+
+  --clr1: black;
+  --clr2: white;
+
+  --header-height: calc(1em + 6vh);
+
+  @media (min-width: $xxl) {
+    --header-height: calc(1em + 7vh);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  // cursor: none;
+  scroll-behavior: smooth;
+  background-color: var(--bg-clr2);
+  overflow-x: hidden;
+  min-width: 100vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  &::-webkit-scrollbar {
+    appearance: none;
+    display: none;
+  }
+
+  font-size: calc(0.6rem + 0.25vw + 0.9vh);
+  @media (min-width: $lg) {
+    font-size: calc(0.9rem + 0.25vw + 0.9vh);
+  }
+  // @media (min-width: $xl) {
+  //   font-size: calc(0.8rem + 0.25vw + 0.9vh);
+  //   display: none;
+  // }
+}
+
+// #cursor {
+//   position: absolute;
+//   width: 32px;
+//   height: 32px;
+//   top: 20%;
+//   50% 50%: 20%;
+//   transform:scale(2);
+//   overflow: hidden;
+//   background: transparent url("../assets/slime.png") 0px 0 no-repeat;
+//   animation: run 1s steps(7) infinite;
+//   pointer-events: none;
+//   // display: none;
+
+//   &.face-right {
+//     transform: rotateY(180deg) scale(2);
+//   }
+
+//   @keyframes run {
+//     100% {
+//       background-position-x: -224px;
+//     }
+//   }
+// }
+
+a {
+  text-decoration: none;
+}
+
+.--btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.--icon-btn {
+}
+
+.container {
+  padding: 0 0.5em;
+  margin: 0 auto;
+  font-size: 0.7em;
+}
+
+// XS SCREEN
+@media (min-width: $xs) {
+  .container {
+    max-width: 100%;
+    padding: 0 1.5em;
+  }
+}
+
+// SM SCREEN
+@media (min-width: $sm) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+// MD SCREEN
+@media (min-width: $md) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+// LG SCREEN
+@media (min-width: $lg) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+// XL SCREEN
+@media (min-width: $xl) {
+  .container {
+    max-width: 1380px;
+  }
+}
+
+// 2XL SCREEN
+@media (min-width: $xxl) {
+  .container {
+    max-width: 1736px;
+  }
+}

@@ -1,0 +1,61 @@
+body.dark {
+  --bg-clr1: white;
+  --bg-clr2: #444;
+  --bg-clr3: gray;
+  --bg-clr4: #333545;
+
+  --card-bg: #333;
+
+  --clr1: white;
+  --clr2: black;
+
+  .wrapper.head {
+    background-color: var(--bg-clr4);
+  }
+
+  .wrapper.head header {
+    color: white !important;
+
+    .menu-btn span {
+      background-color: white !important;
+    }
+
+    .menu a {
+      color: white;
+
+      &:hover:before {
+        background-color: #fff;
+      }
+    }
+
+    .right-buttons {
+      .lang-toggle {
+        .active-lang {
+          border: 2px solid white;
+        }
+
+        &.open .active-lang{
+          border: none;
+          border-bottom: 2px solid white;
+        }
+
+      }
+
+      button {
+        color: white;
+      }
+    }
+  }
+
+  .floating-char-anim {
+    color: white;
+  }
+
+  .wrapper.hero {
+    filter: brightness(75%);
+
+    svg {
+      filter: none;
+    }
+  }
+}

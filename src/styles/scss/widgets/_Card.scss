@@ -1,0 +1,75 @@
+.card {
+  width: 85%;
+  max-width: 350px;
+  // height: 600px;
+  border: 1px solid var(--accent-clr);
+  overflow: hidden;
+  color: var(--clr1);
+  border-radius: 20px;
+  padding: 12px;
+  padding-bottom: 1.3em;
+  // position: relative;
+  background-color: var(--card-bg);
+  box-shadow: 2px 2px 2px 2px var(--accent-clr),
+    0px 10px 12px 0px var(--accent-clr-fade);
+  transition: 0.5s ease;
+  font-size: 1.2em;
+  flex-grow: 0.7;
+
+  @media (min-width: $sm) and (max-width: $lg) {
+    @media screen and (orientation: portrait) {
+      font-size: 2.2em;
+      max-width: 420px;
+    }
+  }
+
+  @media (min-width: $lg) {
+    font-size: 1.5em;
+    max-width: 450px;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 1px 1px 1px 1px var(--accent-clr),
+      0px 15px 20px 0px var(--accent-clr-fade);
+  }
+
+  @media (min-width: $sm) and (max-width: $lg) {
+    font-size: 1.5em;
+  }
+
+  img {
+    background-color: blue;
+    width: 100%;
+    aspect-ratio: 2/1;
+    display: block;
+    border-radius: 1em;
+    margin: 0.5em auto;
+    object-fit: cover;
+    // border: 4px solid var(--accent-clr);
+    background-position: 10px 1px;
+    // position: absolute;
+    opacity: 0.9;
+  }
+
+  .title {
+    // margin-top: 190px;
+    color: inherit;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0 0.2em;
+  }
+
+  .disc {
+    margin: 0.9em 0.111em;
+  }
+
+  .--accent-btn {
+    padding: 0.8em 35%;
+    font-size: 0.9em !important;
+
+    // background-color: #fff;
+    margin: 0 auto;
+    display: block;
+  }
+}

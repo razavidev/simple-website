@@ -1,0 +1,32 @@
+.floating-char-anim {
+  padding: 3px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 3s opacity;
+  font-size: 2.2em;
+  font-weight: 900;
+  letter-spacing: -.04em;
+
+  &.align {
+    opacity: 1;
+  }
+
+  &.align span {
+        animation: animate 1s;
+        animation-delay: .3s;
+  }
+
+  span {
+    display: flex;
+    padding: 1px;
+  }
+
+  @keyframes animate {
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+}
